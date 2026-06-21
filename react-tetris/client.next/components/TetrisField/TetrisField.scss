@@ -1,0 +1,21 @@
+.tetris-field-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tetris-field {
+    display: grid;
+    grid-template-columns: repeat(10, var(--cell-size));
+    grid-template-rows: repeat(20, var(--cell-size));
+    gap: 1px;
+    width: fit-content;
+    padding: 1px;
+    background: var(--g-color-line-generic, #ccc);
+
+    &__cell {
+        width: var(--cell-size);
+        height: var(--cell-size);
+        background: var(--g-color-base-background, #fff);
+    }
+}

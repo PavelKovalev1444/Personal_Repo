@@ -1,0 +1,11 @@
+.page-layout {
+    padding-inline: 20px;
+
+    &__title {
+        display: block;
+    }
+
+    &__content {
+        margin-top: 16px;
+    }
+}
