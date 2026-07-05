@@ -1,0 +1,52 @@
+{
+  "name": "next-repository-registry",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "npm run lint:js && npm run lint:styles && npm run lint:prettier",
+    "lint:js": "eslint",
+    "lint:js:fix": "npm run lint:js -- --fix",
+    "lint:styles": "stylelint 'src/**/*.{css,scss}'",
+    "lint:styles:fix": "npm run lint:styles -- --fix",
+    "lint:prettier": "prettier --check '**/*.{js,jsx,mjs,ts,tsx,css,scss,md,json}'",
+    "lint:prettier:fix": "prettier --write '**/*.{js,jsx,mjs,ts,tsx,css,scss,md,json}'",
+    "lint:fix": "npm run lint:js:fix && npm run lint:styles:fix && npm run lint:prettier:fix"
+  },
+  "dependencies": {
+    "@gravity-ui/components": "^4.22.0",
+    "@gravity-ui/date-components": "^3.4.2",
+    "@gravity-ui/date-utils": "^2.7.1",
+    "@gravity-ui/icons": "^2.20.0",
+    "@gravity-ui/navigation": "^6.1.2",
+    "@gravity-ui/uikit": "^7.43.0",
+    "@redux-devtools/extension": "^4.0.0",
+    "@reduxjs/toolkit": "^2.12.0",
+    "@types/eslint": "^9.6.1",
+    "@types/jest": "^30.0.0",
+    "@types/react-redux": "^7.1.34",
+    "next": "15.5.2",
+    "query-string": "^9.4.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-redux": "^9.3.0",
+    "redux": "^5.0.1",
+    "redux-saga": "^1.5.0"
+  },
+  "devDependencies": {
+    "@gravity-ui/eslint-config": "^4.3.2",
+    "@gravity-ui/prettier-config": "^1.1.0",
+    "@gravity-ui/stylelint-config": "^5.0.0",
+    "@types/node": "20.19.43",
+    "@types/react": "19.2.17",
+    "@types/react-dom": "19.2.3",
+    "eslint": "9.39.4",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "postcss": "^8.5.6",
+    "prettier": "^3.5.3",
+    "stylelint": "^16.25.0",
+    "typescript": "5.9.3"
+  }
+}
